@@ -1,17 +1,17 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\controllerTarefa;
+use App\Http\Controllers\ControllerTarefa;
 
 Route::get('/', function () {
     return view('index');
 })->name('inicio');
 
-Route::get('/tarefas', [controllerTarefa::class, 'index'])->name('indexTarefas');
-Route::get('/tarefas/novo', [controllerTarefa::class, 'create'])->name('novaTarefa');
-Route::post('/tarefas', [controllerTarefa::class, 'store'])->name('gravaNovaTarefa');
-Route::get('/tarefas/apagar/{id}', [controllerTarefa::class, 'destroy'])->name('deletaTarefa');
-Route::get('/tarefas/editar/{id}', [controllerTarefa::class, 'edit'])->name('editaTarefa');
-Route::post('/tarefas/{id}', [controllerTarefa::class, 'update'])->name('atualizaTarefa');
-Route::get('/tarefas/pesquisa', [controllerTarefa::class, 'pesquisarTarefa'])->name('pesquisarTarefa');
-Route::get('/tarefas/procurar', [controllerTarefa::class, 'procurarTarefa'])->name('procurarTarefa');
+Route::get('/tarefas', [ControllerTarefa::class, 'index'])->name('indexTarefas');
+Route::get('/tarefas/novo', [ControllerTarefa::class, 'create'])->name('novaTarefa');
+Route::post('/tarefas', [ControllerTarefa::class, 'store'])->name('gravaNovaTarefa');
+Route::get('/tarefas/apagar/{id}', [ControllerTarefa::class, 'destroy'])->name('deletaTarefa');
+Route::get('/tarefas/editar/{id}', [ControllerTarefa::class, 'edit'])->name('editaTarefa');
+Route::post('/tarefas/{id}', [ControllerTarefa::class, 'update'])->name('atualizaTarefa');
+Route::get('/tarefas/pesquisa', [ControllerTarefa::class, 'pesquisarTarefa'])->name('pesquisarTarefa');
+Route::get('/tarefas/procurar', [ControllerTarefa::class, 'procurarTarefa'])->name('procurarTarefa');

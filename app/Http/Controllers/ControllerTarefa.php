@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\Tarefa;
 use Illuminate\Support\Facades\DB;
 
-class controllerTarefa extends Controller
+class ControllerTarefa extends Controller
 {
     public function index()
     {

@@ -1,38 +1,23 @@
 @vite(['resources/js/app.js'])
-<nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
-    <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">Gerenciador de Tarefas</a> 
-</nav>
-<div class="container-fluid">
-    <div class="row">
-        <nav class="col-md-2 d-none d-md-block bg-light sidebar">
-            <div class="sidebar-sticky">
-                <ul class="nav flex-column">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="{{route('inicio')}}">
-                            <span data-feather="home"></span>
-                            Página inicial <span class="sr-only"></span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{route('indexTarefas')}}">
-                            <span data-feather="file"></span>
-                            Exibir Tarefas Cadastradas 
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{route('novaTarefa')}}">
-                            <span data-feather="shopping-cart"></span>
-                            Cadastro de Tarefas 
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{route('pesquisarTarefa')}}"> 
-                            <span data-feather="users"></span>
-                            Pesquisar Tarefa 
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark p-0 shadow">
+    <div class="container-fluid">
+        <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="{{ route('inicio') }}">Gerenciador de Tarefas</a>
+        
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav px-3">
+                <li class="nav-item text-nowrap">
+                    <a class="nav-link" href="{{route('inicio')}}">Página inicial</a>
+                </li>
+                <li class="nav-item text-nowrap">
+                    <a class="nav-link" href="{{route('indexTarefas')}}">Exibir Tarefas</a>
+                </li>
+                <li class="nav-item text-nowrap">
+                    <a class="nav-link" href="{{route('novaTarefa')}}">Cadastrar Tarefa</a>
+                </li>
+                <li class="nav-item text-nowrap">
+                    <a class="nav-link" href="{{route('pesquisarTarefa')}}">Pesquisar Tarefa</a>
+                </li>
+            </ul>
+        </div>
     </div>
-</div>
+</nav>

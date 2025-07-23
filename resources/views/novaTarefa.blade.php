@@ -21,7 +21,7 @@
             </div>
             <div class="form-group">
                 <label for="status">Status:</label> 
-                <input type="text" class="form-control" name="status" value="Pendente"> 
+                <input type="text" class="form-control" name="status" value="Pendente" readonly> 
             </div>
             <button type="submit" class="btn btn-outline-primary btn-sm">Salvar</button>
             <button onclick="window.location.href='{{route('indexTarefas')}}'" type="button" {{-- Changed route --}}

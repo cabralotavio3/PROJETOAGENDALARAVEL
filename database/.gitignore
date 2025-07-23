@@ -1,1 +1,14 @@
 *.sqlite*
+/node_modules
+/vendor
+/storage/app/public
+/storage/framework/cache
+/storage/framework/sessions
+/storage/framework/testing
+/storage/framework/views
+/storage/logs
+*.log
+/public/build
+/public/hot
+.env
+.env.*

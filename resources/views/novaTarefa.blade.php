@@ -24,7 +24,7 @@
                 <input type="text" class="form-control" name="status" value="Pendente" readonly> 
             </div>
             <button type="submit" class="btn btn-outline-primary btn-sm">Salvar</button>
-            <button onclick="window.location.href='{{route('indexTarefas')}}'" type="button" {{-- Changed route --}}
+            <button onclick="window.location.href='{{route('indexTarefas')}}'" type="button" 
                     class="btn btn-outline-danger btn-sm">Cancelar</button>
         </form>
     </div>
